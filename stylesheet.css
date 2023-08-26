@@ -18,6 +18,18 @@ body {
     font-weight: bold;
 }
 
+.head-links a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.head-links a:hover {
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+    color: #1F2937;
+}
+
 .logo {
     width: 90px;
     height: 50px;
@@ -40,7 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 10px;
 }
 
 .info-section h1 {
@@ -53,15 +65,13 @@ body {
     color: #F9FAF8;
 }
 
-.info-section button {
-    height: 25px;
-    width: 100px;
-    border-radius: 5px;
-}
-
 .offers {
     display: flex;
     flex-direction: column;
+}
+
+.offers a:hover {
+    filter: brightness(25%);
 }
 
 .offers h2 {
@@ -81,32 +91,39 @@ body {
 }
 
 .card-section img {
-    width: 250px;
+    width: 350px;
     height: 250px;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .card-section p {
     text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .tank-section {
     display: flex;
     flex-direction: column;
-    background-color: #E5E7EB;
+    background-color:#1F2937;
     height: 300px;
     background-image: url(/img/acendant-knight.jpg);
     background-position: 50%;
     background-size: cover;
+    background-blend-mode: overlay;
     color: #F9FAF8;
 }
 
 #quote-text {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 #quote-source {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     margin-right: 150px;
 }
 
@@ -121,11 +138,25 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 10px;
+    gap: 50px;
+}
+
+.call-to-action img {
+    width: 200px;
 }
 
 .cta-info {
     display: flex;
     flex-direction: column;
+}
+
+.call-to-action button {
+    background: none;
+    border: solid white;
+    border-radius: 6px;
+    width: 125px;
+    height: 30px;
+    color: #E5E7EB;
 }
 
 .footer {
